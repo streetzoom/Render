@@ -30,7 +30,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 
     WNDCLASSA WindowsClass = {};
     WindowsClass.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
-    WindowsClass.lpfnWndProc = WNDPROC(Win32WindowCallback);
+    WindowsClass.lpfnWndProc = Win32WindowCallback;
     WindowsClass.hInstance = hInstance;
     WindowsClass.hCursor = LoadCursorW(nullptr, IDC_ARROW);
     WindowsClass.lpszClassName = "GraphicsTutorialWindowClass";
